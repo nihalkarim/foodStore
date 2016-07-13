@@ -1,4 +1,5 @@
-#include "food.h"
+#include "Food.h"
+#include "FoodFactory.h"
 #include <iostream>
 using namespace std;
 
@@ -86,7 +87,7 @@ namespace food {
 	Fries::Fries (Size size):Food(size) {
 		name = "fries";
 		calories[SMALL] = 80;
-		calories[MEDIUM] = 10;
+		calories[MEDIUM] = 100;
 		calories[LARGE] = 130;
 		cout << "ordering: " << getSizeName(size) << " fries..." << endl;
 	}
@@ -396,57 +397,6 @@ namespace food {
 		}
 
 		return price;
-	}
-
-
-	Food *FoodFactory::getFood(Size size, string name) {
-
-		if(name.empty()) {
-			return NULL;
-		}
-
-		if(name == "waffles") {
-			return new Waffles(size);
-		} 
-
-		else if(name == "pancakes") {
-			return new Pancakes(size);
-		}
-
-		else if(name == "pizza") {
-			return new Pizza(size);
-		}
-
-		else if(name == "fries") {
-			return new Fries(size);
-		}
-
-		else if(name == "burger") {
-			return new Burger(size);
-		}
-
-		else if(name == "cheeseburger") {
-			return new Cheeseburger(size);
-		}
-
-		else if(name == "pie") {
-			return new Pie(size);
-		}
-
-		else if(name == "cake") {
-			return new Cake(size);
-		}
-
-		else if(name == "brownie") {
-			return new Brownie(size);
-		}
-
-		else if(name == "cookie") {
-			return new Cookie(size);
-		}
-
-		return NULL;
-
 	}
 
 	void Order::orderA(Size size, string name) {

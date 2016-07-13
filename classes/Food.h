@@ -116,12 +116,6 @@ namespace food {
 	};
 
 
-	class FoodFactory {
-		public:
-			Food *getFood(Size size, string name);
-
-	};
-
 	class Order {
 		public:
 			vector <Food*> orderedItems; 
