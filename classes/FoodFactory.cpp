@@ -1,5 +1,6 @@
 #include "FoodFactory.h"
 #include "Food.h"
+#include "Waffles.h"
 
 namespace food {
 
