@@ -20,6 +20,7 @@ int main()
 	menu[9] = "brownie";
 	menu[10] = "cookie";
 	menu[11] = "lasagna";
+	menu[12] = "PepeSpecial";
 
 	Order ordering;
 
