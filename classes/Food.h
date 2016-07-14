@@ -30,15 +30,6 @@ namespace food {
 			Size size;
 	};
 
-
-	class Pancakes : public Food {
-
-		public:
-			Pancakes (Size size);
-			float getPrice();
-
-	};
-
 	class Pizza : public Food {
 
 		public:
