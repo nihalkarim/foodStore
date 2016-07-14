@@ -1,6 +1,6 @@
 #include "Food.h"
 #include "FoodFactory.h"
-#include "Waffle.h"
+#include "Waffles.h"
 #include <iostream>
 using namespace std;
 
@@ -135,8 +135,6 @@ namespace food {
 	}
 
 	
-		return price;
-	}
 
 	float Pancakes::getPrice() {
 
