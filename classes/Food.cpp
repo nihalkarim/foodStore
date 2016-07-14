@@ -1,6 +1,7 @@
 #include "Food.h"
 #include "FoodFactory.h"
 #include "Waffles.h"
+#include "Lasagna.h"
 #include <iostream>
 using namespace std;
 
@@ -133,6 +134,7 @@ namespace food {
 		calories[LARGE] = 140;
 		cout << "ordering: " << getSizeName(size) << " cookie..." << endl;
 	}
+
 
 	
 
@@ -366,7 +368,7 @@ namespace food {
 
 		}
 
-		return price;
+			return price;
 	}
 
 	void Order::orderA(Size size, string name) {

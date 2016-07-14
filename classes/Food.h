@@ -104,7 +104,7 @@ namespace food {
 			float getPrice();
 
 	};
-
+	
 
 	class Order {
 		public:
