@@ -25,9 +25,14 @@ int main()
 
 	cout << "Welcome to 'The Rarest Pepe' What would you like to order today? (choose a #) \n" << endl; 
 
-	for (auto const& m : menu) {
-	    std::cout << m.first << ") " << m.second << '\n';
+	map<int, string>::iterator it;
+
+	for (it = menu.begin(); it != menu.end(); it++) {
+	/*for (auto const& m : menu) { for C++ 11 and 
+		std::cout << m.first << ") " << m.second << '\n'; */
+	    std::cout << it->first << ") " << it->second << '\n';
 	}
+
 
 	while(true) {
 
