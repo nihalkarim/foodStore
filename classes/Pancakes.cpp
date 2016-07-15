@@ -17,16 +17,21 @@ namespace food {
 		Size cakeSize = getSize();
 
 		switch(cakeSize) {
+			
 			case SMALL:
 							price = 1.75;
 			break;
+			
 			case MEDIUM:
 							price = 2.25;
 			break;
+			
 			case LARGE:
 							price = 3.75;
 			break;
+			
 			default:
+			
 				price = 0;
 
 		}

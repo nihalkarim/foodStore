@@ -4,6 +4,8 @@
 #include "Lasagna.h"
 #include "PepeSpecial.h"
 #include "Pancakes.h"
+#include "Pizza.h"
+#include "Pie.h"
 
 namespace food {
 

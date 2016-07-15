@@ -29,16 +29,7 @@ namespace food {
 		private:
 			Size size;
 	};
-
-	class Pizza : public Food {
-
-		public:
-			Pizza (Size size);
-			float getPrice();
-		private:
-
-	};
-
+	
 	class Fries : public Food {
 
 		public:
@@ -59,14 +50,6 @@ namespace food {
 
 		public:
 			Cheeseburger (Size size);
-			float getPrice();
-
-	};
-
-	class Pie : public Food {
-
-		public:
-			Pie (Size size);
 			float getPrice();
 
 	};
