@@ -9,7 +9,7 @@ using namespace food;
 int main()
 {
 	map<int, string> menu;
-	menu[1] = "waffless";
+	menu[1] = "waffles";
 	menu[2] = "pancakes";
 	menu[3] = "pizza";
 	menu[4] = "fries";
