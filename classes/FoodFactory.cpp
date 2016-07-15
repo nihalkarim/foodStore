@@ -1,5 +1,11 @@
 #include "FoodFactory.h"
 #include "Food.h"
+#include "Waffles.h"
+#include "Lasagna.h"
+#include "PepeSpecial.h"
+#include "Pancakes.h"
+#include "Pizza.h"
+#include "Pie.h"
 
 namespace food {
 
@@ -47,6 +53,14 @@ namespace food {
 
 		else if(name == "cookie") {
 			return new Cookie(size);
+		}
+
+		else if(name == "lasagna"){
+			return new Lasagna(size);
+		}
+
+		else if(name == "pepespecial"){
+			return new PepeSpecial(size);
 		}
 
 		return NULL;

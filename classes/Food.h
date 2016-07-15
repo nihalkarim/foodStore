@@ -29,35 +29,7 @@ namespace food {
 		private:
 			Size size;
 	};
-
-
-	class Waffles : public Food {
-
-		public:
-			Waffles (Size);
-			float getPrice();
-			int getCalories();
-		private:
-			
-	};
-
-	class Pancakes : public Food {
-
-		public:
-			Pancakes (Size size);
-			float getPrice();
-
-	};
-
-	class Pizza : public Food {
-
-		public:
-			Pizza (Size size);
-			float getPrice();
-		private:
-
-	};
-
+	
 	class Fries : public Food {
 
 		public:
@@ -78,14 +50,6 @@ namespace food {
 
 		public:
 			Cheeseburger (Size size);
-			float getPrice();
-
-	};
-
-	class Pie : public Food {
-
-		public:
-			Pie (Size size);
 			float getPrice();
 
 	};
@@ -114,7 +78,7 @@ namespace food {
 			float getPrice();
 
 	};
-
+	
 
 	class Order {
 		public:
