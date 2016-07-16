@@ -55,15 +55,6 @@ namespace food {
 		size = newSize;
 	}
 
-
-	Fries::Fries (Size size):Food(size) {
-		name = "fries";
-		calories[SMALL] = 80;
-		calories[MEDIUM] = 100;
-		calories[LARGE] = 130;
-		cout << "ordering: " << getSizeName(size) << " fries..." << endl;
-	}
-
 	Burger::Burger (Size size):Food(size) {
 		name = "burger";
 		calories[SMALL] = 150;
@@ -88,14 +79,6 @@ namespace food {
 		cout << "ordering: " << getSizeName(size) << " cake..." << endl;
 	}
 
-	Brownie::Brownie (Size size):Food(size) {
-		name = "brownie";
-		calories[SMALL] = 90;
-		calories[MEDIUM] = 105;
-		calories[LARGE] = 120;
-		cout << "ordering: " << getSizeName(size) << " brownie..." << endl;
-	}
-
 	Cookie::Cookie (Size size):Food(size) {
 		name = "cookie";
 		calories[SMALL] = 100;
@@ -104,32 +87,6 @@ namespace food {
 		cout << "ordering: " << getSizeName(size) << " cookie..." << endl;
 	}
 
-
-	float Fries::getPrice() {
-
-		float price;
-		Size cakeSize = getSize();
-
-		switch(cakeSize) {
-			case SMALL:
-							price = 1.00;
-			break;
-
-			case MEDIUM:
-							price = 2.25;
-			break;
-
-			case LARGE:
-							price = 3.50;
-			break;
-
-			default:
-				price = 0;
-
-		}
-
-		return price;
-	}
 
 	float Burger::getPrice() {
 
@@ -212,31 +169,6 @@ namespace food {
 		return price;
 	}
 
-	float Brownie::getPrice() {
-
-		float price;
-		Size cakeSize = getSize();
-
-		switch(cakeSize) {
-			case SMALL:
-							price = 1.00;
-			break;
-
-			case MEDIUM:
-							price = 1.50;
-			break;
-
-			case LARGE:
-							price = 2.10;
-			break;
-
-			default:
-				price = 0;
-
-		}
-
-		return price;
-	}
 
 	float Cookie::getPrice() {
 

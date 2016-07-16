@@ -6,6 +6,8 @@
 #include "Pancakes.h"
 #include "Pizza.h"
 #include "Pie.h"
+#include "Brownie.h"
+#include "Fries.h"
 
 namespace food {
 
