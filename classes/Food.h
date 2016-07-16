@@ -30,41 +30,6 @@ namespace food {
 			Size size;
 	};
 
-
-	class Burger : public Food {
-
-		public:
-			Burger (Size size);
-			float getPrice();
-
-	};
-
-	class Cheeseburger : public Food {
-
-		public:
-			Cheeseburger (Size size);
-			float getPrice();
-
-	};
-
-	class Cake : public Food {
-
-		public:
-			Cake (Size size);
-			float getPrice();
-		
-
-	};
-
-	class Cookie : public Food {
-
-		public:
-			Cookie (Size size);
-			float getPrice();
-
-	};
-	
-
 	class Order {
 		public:
 			vector <Food*> orderedItems; 
