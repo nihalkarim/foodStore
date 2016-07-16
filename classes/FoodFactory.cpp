@@ -8,6 +8,10 @@
 #include "Pie.h"
 #include "Brownie.h"
 #include "Fries.h"
+#include "Cookie.h"
+#include "Burger.h"
+#include "Cheeseburger.h"
+#include "Cake.h"
 
 namespace food {
 
