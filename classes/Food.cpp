@@ -1,5 +1,5 @@
 #include "Food.h"
-#include "FoodFactory.h"
+#include "Order.h"
 #include <iostream>
 using namespace std;
 
@@ -56,21 +56,6 @@ namespace food {
 	}
 
 
-	Fries::Fries (Size size):Food(size) {
-		name = "fries";
-		calories[SMALL] = 80;
-		calories[MEDIUM] = 100;
-		calories[LARGE] = 130;
-		cout << "ordering: " << getSizeName(size) << " fries..." << endl;
-	}
-
-	Burger::Burger (Size size):Food(size) {
-		name = "burger";
-		calories[SMALL] = 150;
-		calories[MEDIUM] = 210;
-		calories[LARGE] = 270;
-		cout << "ordering: " << getSizeName(size) << " burger..." << endl;
-	}
 
 	Cheeseburger::Cheeseburger (Size size):Food(size) {
 		name = "cheeseburger";
@@ -105,57 +90,7 @@ namespace food {
 	}
 
 
-	float Fries::getPrice() {
-
-		float price;
-		Size cakeSize = getSize();
-
-		switch(cakeSize) {
-			case SMALL:
-							price = 1.00;
-			break;
-
-			case MEDIUM:
-							price = 2.25;
-			break;
-
-			case LARGE:
-							price = 3.50;
-			break;
-
-			default:
-				price = 0;
-
-		}
-
-		return price;
-	}
-
-	float Burger::getPrice() {
-
-		float price;
-		Size cakeSize = getSize();
-
-		switch(cakeSize) {
-			case SMALL:
-							price = 1.55;
-			break;
-
-			case MEDIUM:
-							price = 2.70;
-			break;
-
-			case LARGE:
-							price = 4.95;
-			break;
-
-			default:
-				price = 0;
-
-		}
-
-		return price;
-	}
+	
 
 	float Cheeseburger::getPrice() {
 
@@ -262,38 +197,6 @@ namespace food {
 		}
 
 			return price;
-	}
-
-	void Order::orderA(Size size, string name) {
-		FoodFactory factory;
-		Food *newOrder = factory.getFood(size, name);
-		orderedItems.push_back(newOrder);
-	}
-
-	void Order::receipt() {
-
-		float totalPrice = 0;
-		int totalCalories = 0;
-
-		cout << "* * * * * ORDER DETAILS * * * * *" << endl << endl;
-		cout << "\tname\t\t\tsize\t\tprice\t\t\tcalories " << endl << endl;
-
-		for (Food *item : orderedItems ) {
-
-			float price = item->getPrice();
-			int cal = item->calories[item->getSize()];
-
-			totalPrice += price;
-			totalCalories += cal;
-
-		    cout << "\t" << item->name << "\t\t\t" << getSizeName(item->getSize()) << "\t\t$" <<  price << "\t\t\t" <<  cal << endl;
-		}
-
-		cout << "______________________" << endl;
-		cout << "ORDER TOTAL: $" << totalPrice << endl;
-		cout << "Total calories: " << totalCalories << " cal." << endl << endl;
-		cout << "______________________" << endl;
-
 	}
 
 }

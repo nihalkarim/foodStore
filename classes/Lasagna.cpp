@@ -18,15 +18,15 @@ namespace food {
 
 		switch(cakeSize) {
 			case SMALL:
-							price = 2.00;
+							price = 2.15;
 			break;
 
 			case MEDIUM:
-							price = 3.25;
+							price = 3.35;
 			break;
 
 			case LARGE:
-							price = 4.00;
+							price = 4.05;
 			break;
 
 			default:
@@ -36,3 +36,4 @@ namespace food {
 		return price;
 	}
 }
+

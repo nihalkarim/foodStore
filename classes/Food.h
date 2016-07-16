@@ -30,21 +30,7 @@ namespace food {
 			Size size;
 	};
 	
-	class Fries : public Food {
 
-		public:
-			Fries (Size size);
-			float getPrice();
-
-	};
-
-	class Burger : public Food {
-
-		public:
-			Burger (Size size);
-			float getPrice();
-
-	};
 
 	class Cheeseburger : public Food {
 
@@ -79,15 +65,6 @@ namespace food {
 
 	};
 	
-
-	class Order {
-		public:
-			vector <Food*> orderedItems; 
-			void orderA(Size size, string name);
-			void receipt();
-
-
-	};
 
 }
 
