@@ -52,7 +52,7 @@ int main()
 
 		}  else {
 
-			cout << "Thank you!" << endl;
+			cout << "Thank you, for coming to The Rarest Pepe!" << endl;
 			break;
 
 		}
