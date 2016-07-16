@@ -57,7 +57,7 @@ int main()
 
 		}
 
-		cout << "What else would you like to order? Select or type '0' to complete." << endl; 
+		cout << "What else would you like to order? Select or type 'q' to complete." << endl; 
 		
 	}
 
