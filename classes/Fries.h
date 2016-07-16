@@ -11,7 +11,9 @@ namespace food {
 			float getPrice();
 
 	};
-
+	
 }
 
 #endif
+
+

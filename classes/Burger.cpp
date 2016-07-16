@@ -4,6 +4,7 @@
 namespace food {
 
 	Burger::Burger (Size size):Food(size) {
+
 		name = "brownie";
 		calories[SMALL] = 150;
 		calories[MEDIUM] = 210;

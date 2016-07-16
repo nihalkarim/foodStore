@@ -30,15 +30,6 @@ namespace food {
 			Size size;
 	};
 
-	class Order {
-		public:
-			vector <Food*> orderedItems; 
-			void orderA(Size size, string name);
-			void receipt();
-
-
-	};
-
 }
 
 #endif
