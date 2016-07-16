@@ -1,5 +1,6 @@
-#ifndef BURGERS_H
-#define BURGERS_H
+#ifndef BURGER_H
+#define BURGER_H
+#include "Food.h"
 
 namespace food {
 

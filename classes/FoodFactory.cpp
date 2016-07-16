@@ -3,10 +3,12 @@
 #include "Waffles.h"
 #include "Pancakes.h"
 #include "Pizza.h"
+#include "Burger.h"
 #include "Pie.h"
 #include "Lasagna.h"
 #include "PepeSpecial.h"
-
+#include "Brownie.h"
+#include "Fries.h"
 
 namespace food {
 

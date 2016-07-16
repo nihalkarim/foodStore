@@ -29,8 +29,6 @@ namespace food {
 		private:
 			Size size;
 	};
-	
-
 
 	class Cheeseburger : public Food {
 
@@ -46,14 +44,6 @@ namespace food {
 			Cake (Size size);
 			float getPrice();
 		
-
-	};
-
-	class Brownie : public Food {
-
-		public:
-			Brownie (Size size);
-			float getPrice();
 
 	};
 
